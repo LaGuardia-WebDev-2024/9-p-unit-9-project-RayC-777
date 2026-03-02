@@ -43,4 +43,3 @@ var drawScene = function(){
 
 
 
-<div class="tenor-gif-embed" data-postid="13345443030693759847" data-share-method="host" data-aspect-ratio="1.77857" data-width="100%"><a href="https://tenor.com/view/animaniacs-wakko-warner-somebody-are-my-donuts-donuts-doughnuts-gif-13345443030693759847">Animaniacs Wakko Warner GIF</a>from <a href="https://tenor.com/search/animaniacs-gifs">Animaniacs GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
