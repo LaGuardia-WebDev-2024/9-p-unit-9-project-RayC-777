@@ -3,7 +3,7 @@ setup = function() {
 };
 
 //Background Images
-var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBMFGtlmlBkLmfcZ0vQTw9lH7vLTkEa7_ItM2b8C6KrbEwV6fmu5zEk5OfjU_nwRKSBjA7zxldQCz_okebVuyHLWvKBsEJn-A_1Npcnt_jvwCtYp2Q=w1905-h953?auditContext=forDisplay");
+var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBPvy5nbDgmx10u_v1vH6BlT4QHQkT09Fjsj0upcZW7fheA6k7ZU38_MHF5jXiL3IGRTM0RcubHw0D9zSJrbGzcdJNfYqnJQqmR4wWCOBwMWen2r=w2100-h1414?auditContext=forDisplay");
 
 var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg/revision/latest/scale-to-width-down/1000?cb=20220809225953");
 
