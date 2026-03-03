@@ -1,15 +1,17 @@
 setup = function() {
-    size(900, 500);
+    size(1100, 500);
 };
 
 //Background Images
-var caveSceneImage = loadImage("https://www.shutterstock.com/image-vector/vector-illustration-background-forest-scenery-600nw-1807427365.jpg");
+var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBMFGtlmlBkLmfcZ0vQTw9lH7vLTkEa7_ItM2b8C6KrbEwV6fmu5zEk5OfjU_nwRKSBjA7zxldQCz_okebVuyHLWvKBsEJn-A_1Npcnt_jvwCtYp2Q=w1905-h953?auditContext=forDisplay");
 
-var forestImage = loadImage("https://t3.ftcdn.net/jpg/02/50/39/72/360_F_250397206_HuBj2V5oEytcqonzpzum4IjEjtAsZq3g.jpg");
+var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg/revision/latest/scale-to-width-down/1000?cb=20220809225953");
+
+
 
 //Variable Declarations
-var sceneImage = caveSceneImage;
-var sceneText = "Wakko's missing his cupcake. Can you help him search for it? [Press f for forest and c for cave]";
+var sceneImage = lostSceneImage;
+var sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and s for the streets]";
 
 draw = function(){
     
@@ -17,23 +19,24 @@ draw = function(){
 
 
    if(keyPressed){
-     if(key == 'f'){
-       sceneImage = forestImage;   
-       sceneText = "No fox here.  [Press s to restart]";
+     if(key == 'm'){
+       sceneImage = movielotImage;   
+       sceneText = "Hmmm....lets check the movie lot offices!  [Press r to restart]";
      } 
-     if(key == 's'){
-      sceneImage = caveSceneImage;
-      sceneText = "Help! Wakko's missing his cupcake! Can you help him search for it? [Press f for forest and c for cave]";
+     if(key == 'r'){
+      sceneImage = lostSceneImage;
+      sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and s for the streets]";
     } 
+    
    }
   
 };
 
 var drawScene = function(){
-    image(sceneImage, 0, 0, 900,500);
+    image(sceneImage, 0, 0, 1100,500);
     
     fill(0,0,0);
-    rect(0, 400, 900, 100);
+    rect(0, 400, 1100, 100);
       
     fill(255,255,255);
     textSize(20);
