@@ -84,7 +84,7 @@ var drawScene = function(){
     image(sceneImage, 0, 0, 1100,550);
     
     fill(0,0,0);
-    rect(0, 450, 1100, 100);
+    rect(0, 450, 1100, 100); // text box
       
     fill(255,255,255);
     textSize(19);
