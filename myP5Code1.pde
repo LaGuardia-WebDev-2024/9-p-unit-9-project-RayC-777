@@ -58,7 +58,7 @@ draw = function(){
 
       if(key == 'a'){
         sceneImage = RalphImage;
-        sceneText = "This Bafoon doesn't know, either-WAIT A MINUTE [Quick, press e to ESCAPE]";
+        sceneText = "This Bafoon doesn't know, either-WAIT A MINUTE! [Quick, press e to ESCAPE!!]";
       }
     
       if(key == 'e'){
