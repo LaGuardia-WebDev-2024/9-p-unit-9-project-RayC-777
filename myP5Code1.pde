@@ -3,7 +3,7 @@ setup = function() {
 };
 
 //Background Images
-var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBO3pB4xyvxuwFl9WjZuniHcRgNAin3GgpRmdAhGiyZqhk5n5GM_ZcaHSTqJHazKNB_cdYvD_6I8uj1pZHS03-tGRkC0Sw3ZXOBijLolhH9iWJWWSg=w2880-h1620?auditContext=forDisplay.jpg");
+var lostSceneImage = loadImage("Lost 2026-03-03 100902.png");
 
 var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg");
 
@@ -19,7 +19,7 @@ var ESCAPEImage = loadImage ("Escape 2026-03-04 at 12.04.24 AM.png");
 
 var WhewImage = loadImage ("https://cdnph.upi.com/ph/st/th/9781676409878/2023/i/16764102568168/v1.5/Animaniacs-actors-dont-believe-Season-3-is-the-end.jpg?lg=5&=1");
 
-var DonutsImage = loadImage ("https://lh3.googleusercontent.com/drive-storage/AJQWtBPVouViRRVC7DMJyEe9qTbCNdwRdX4POa76PMflNI8NhJmBAsTrgUB-Wgix7X6dG-dH7H4ijn7nhgSLUlkbPAAOAtWdkfh-VzDeL5tSc75KCbBIGw=w2880-h1620?auditContext=forDisplay.jpg");
+var DonutsImage = loadImage ("Donuts 2026-03-04 at 12.31.14 AM.png");
 
 //Variable Declarations
 var sceneImage = lostSceneImage;
@@ -43,7 +43,7 @@ draw = function(){
      
      if(key == 'h'){
       sceneImage = helloNurseImage;
-      sceneText = "HELLOOOOO NURSE-aaand she has no clue. She's kinda busy'. She wishes you good luck, tho! [Press r to restart]";
+      sceneText = "HELLOOOOO NURSE-aaand she has no clue. She's kinda busy. She wishes you good luck, tho! [Press r to restart]";
      }
  
      if(key == 'r'){
