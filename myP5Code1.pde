@@ -15,7 +15,7 @@ var lotGateImage = loadImage ("https://static.wikia.nocookie.net/animaniacs/imag
 
 var RalphImage = loadImage ("https://static.wikia.nocookie.net/cartoons/images/3/39/Ralph_The_Gaurd.jpg/revision/latest?cb=20070611220000");
 
-var ESCAPEImage = loadImage ("https://lh3.googleusercontent.com/drive-storage/AJQWtBPaujxVuj4ecpUcM95K7dJWLHoekNr4r_z1XyNOlHqXKNfd5bY9bDwnSNy5zP6RY3ZYLLJ-BWaQDVyEoHWYrlVN1ySfkZP9bDe6alUPA9ts1ZNN0w=w2880-h1620?auditContext=forDisplay.jpg");
+var ESCAPEImage = loadImage ("Escape 2026-03-04 at 12.04.24 AM.png");
 
 var WhewImage = loadImage ("https://cdnph.upi.com/ph/st/th/9781676409878/2023/i/16764102568168/v1.5/Animaniacs-actors-dont-believe-Season-3-is-the-end.jpg?lg=5&=1");
 
