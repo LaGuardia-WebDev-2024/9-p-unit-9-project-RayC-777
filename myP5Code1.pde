@@ -68,7 +68,7 @@ draw = function(){
 
       if(key == 't'){
         sceneImage = WhewImage;
-        sceneText = "Whew, that was close. Now back at the tower, the Warners see something inside... [Press s for surprise]";
+        sceneText = "Whew, that was close. Back at the tower, the Warners see something inside... [Press s for surprise]";
       }
 
       if(key == 's'){
