@@ -1,17 +1,29 @@
 setup = function() {
-    size(1100, 500);
+    size(1100, 550);
 };
 
 //Background Images
-var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBPvy5nbDgmx10u_v1vH6BlT4QHQkT09Fjsj0upcZW7fheA6k7ZU38_MHF5jXiL3IGRTM0RcubHw0D9zSJrbGzcdJNfYqnJQqmR4wWCOBwMWen2r=w2100-h1414?auditContext=forDisplay");
+var lostSceneImage = loadImage("https://lh3.googleusercontent.com/drive-storage/AJQWtBO3pB4xyvxuwFl9WjZuniHcRgNAin3GgpRmdAhGiyZqhk5n5GM_ZcaHSTqJHazKNB_cdYvD_6I8uj1pZHS03-tGRkC0Sw3ZXOBijLolhH9iWJWWSg=w2880-h1620?auditContext=forDisplay.jpg");
 
-var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg/revision/latest/scale-to-width-down/1000?cb=20220809225953");
+var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg");
 
+var officeImage = loadImage("https://images.squarespace-cdn.com/content/v1/5431e565e4b0a3aafb4528f0/0ec004a9-0563-4d56-8b1e-cea782576421/AcmeLabsNight.jpg");
 
+var helloNurseImage = loadImage ("https://choicefineart.com/cdn/shop/products/animaniacs-original-production-cel-hello-nurse-289702.jpg?v=1688077633");
+
+var lotGateImage = loadImage ("https://static.wikia.nocookie.net/animaniacs/images/c/c0/Warner_Lot_Suspended_Animation.jpeg/revision/latest/scale-to-width-down/1000?cb=20220801153805");
+
+var RalphImage = loadImage ("https://static.wikia.nocookie.net/cartoons/images/3/39/Ralph_The_Gaurd.jpg/revision/latest?cb=20070611220000");
+
+var ESCAPEImage = loadImage ("https://lh3.googleusercontent.com/drive-storage/AJQWtBPaujxVuj4ecpUcM95K7dJWLHoekNr4r_z1XyNOlHqXKNfd5bY9bDwnSNy5zP6RY3ZYLLJ-BWaQDVyEoHWYrlVN1ySfkZP9bDe6alUPA9ts1ZNN0w=w2880-h1620?auditContext=forDisplay.jpg");
+
+var WhewImage = loadImage ("https://cdnph.upi.com/ph/st/th/9781676409878/2023/i/16764102568168/v1.5/Animaniacs-actors-dont-believe-Season-3-is-the-end.jpg?lg=5&=1");
+
+var DonutsImage = loadImage ("https://lh3.googleusercontent.com/drive-storage/AJQWtBPVouViRRVC7DMJyEe9qTbCNdwRdX4POa76PMflNI8NhJmBAsTrgUB-Wgix7X6dG-dH7H4ijn7nhgSLUlkbPAAOAtWdkfh-VzDeL5tSc75KCbBIGw=w2880-h1620?auditContext=forDisplay.jpg");
 
 //Variable Declarations
 var sceneImage = lostSceneImage;
-var sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and s for the streets]";
+var sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and g for the gate]";
 
 draw = function(){
     
@@ -21,27 +33,63 @@ draw = function(){
    if(keyPressed){
      if(key == 'm'){
        sceneImage = movielotImage;   
-       sceneText = "Hmmm....lets check the movie lot offices!  [Press r to restart]";
+       sceneText = "Hmmm....lets check the movie lot offices!  [Press o to offices]";
      } 
+     
+     if(key == 'o'){
+      sceneImage = officeImage;
+      sceneText = "No sign of delicious donuts here. [Press h to hello]";
+     }
+     
+     if(key == 'h'){
+      sceneImage = helloNurseImage;
+      sceneText = "HELLOOOOO NURSE-aaand she has no clue. She's kinda busy'. She wishes you good luck, tho! [Press r to restart]";
+     }
+ 
      if(key == 'r'){
       sceneImage = lostSceneImage;
-      sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and s for the streets]";
+      sceneText = "Help! Wakko's missing his Donuts! Can you help him search for it? [Press m for the movie lot and g for the gate]";
     } 
+
+      if(key == 'g'){
+        sceneImage = lotGateImage;
+        sceneText = "Lets ask Ralph the Security Guard if he's seen them! [Press a to ask Ralph]";
+      }
+
+      if(key == 'a'){
+        sceneImage = RalphImage;
+        sceneText = "This Bafoon doesn't know, either-WAIT A MINUTE [Quick, press e to ESCAPE]";
+      }
     
+      if(key == 'e'){
+        sceneImage = ESCAPEImage;
+        sceneText = "Quick, head to the water tower before he snatches us up! [Press t for tower]";
+      }
+
+      if(key == 't'){
+        sceneImage = WhewImage;
+        sceneText = "Whew, that was close. Now back at the tower, the Warners see something inside... [Press s for surprise]";
+      }
+
+      if(key == 's'){
+        sceneImage = DonutsImage;
+        sceneText = "The Donuts were here all along! Wakko can finally enjoy! Tks for helping the hungry lil guy! [Press r to restart]";
+      }
+
    }
   
 };
 
 var drawScene = function(){
-    image(sceneImage, 0, 0, 1100,500);
+    image(sceneImage, 0, 0, 1100,550);
     
     fill(0,0,0);
-    rect(0, 400, 1100, 100);
+    rect(0, 450, 1100, 100);
       
     fill(255,255,255);
-    textSize(20);
-   
-    text(sceneText, 10, 435);
+    textSize(19);
+   textFont( createFont("Luckiest Guy") );
+    text(sceneText, 10, 485);
 };
 
 
