@@ -76,8 +76,6 @@ draw = function(){
         sceneText = "The Donuts were here all along! Wakko can finally enjoy! Tks for helping the hungry lil guy! [Press r to restart]";
       }
       
-      
-
 
    }
 };
