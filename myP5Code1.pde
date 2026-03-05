@@ -3,23 +3,23 @@ setup = function() {
 };
 
 //Background Images
-var lostSceneImage = loadImage("Lost 2026-03-03 100902.png");
+var lostSceneImage = loadImage("Lost 2026-03-03 100902.png"); //r key
 
-var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg");
+var movielotImage = loadImage("https://static.wikia.nocookie.net/animaniacs/images/b/b1/Scratchy%27s_Office_Reboot_Yakko_Amakko.jpg"); //m key
 
-var officeImage = loadImage("https://images.squarespace-cdn.com/content/v1/5431e565e4b0a3aafb4528f0/0ec004a9-0563-4d56-8b1e-cea782576421/AcmeLabsNight.jpg");
+var officeImage = loadImage("https://images.squarespace-cdn.com/content/v1/5431e565e4b0a3aafb4528f0/0ec004a9-0563-4d56-8b1e-cea782576421/AcmeLabsNight.jpg"); //o key
 
-var helloNurseImage = loadImage ("https://choicefineart.com/cdn/shop/products/animaniacs-original-production-cel-hello-nurse-289702.jpg?v=1688077633");
+var helloNurseImage = loadImage ("https://choicefineart.com/cdn/shop/products/animaniacs-original-production-cel-hello-nurse-289702.jpg?v=1688077633"); //h key
 
-var lotGateImage = loadImage ("https://static.wikia.nocookie.net/animaniacs/images/c/c0/Warner_Lot_Suspended_Animation.jpeg/revision/latest/scale-to-width-down/1000?cb=20220801153805");
+var lotGateImage = loadImage ("https://static.wikia.nocookie.net/animaniacs/images/c/c0/Warner_Lot_Suspended_Animation.jpeg/revision/latest/scale-to-width-down/1000?cb=20220801153805"); //g key
 
-var RalphImage = loadImage ("https://static.wikia.nocookie.net/cartoons/images/3/39/Ralph_The_Gaurd.jpg/revision/latest?cb=20070611220000");
+var RalphImage = loadImage ("https://static.wikia.nocookie.net/cartoons/images/3/39/Ralph_The_Gaurd.jpg/revision/latest?cb=20070611220000"); //a key
 
-var ESCAPEImage = loadImage ("Escape 2026-03-04 at 12.04.24 AM.png");
+var ESCAPEImage = loadImage ("Escape 2026-03-04 at 12.04.24 AM.png"); //e key
 
-var WhewImage = loadImage ("https://cdnph.upi.com/ph/st/th/9781676409878/2023/i/16764102568168/v1.5/Animaniacs-actors-dont-believe-Season-3-is-the-end.jpg?lg=5&=1");
+var WhewImage = loadImage ("https://cdnph.upi.com/ph/st/th/9781676409878/2023/i/16764102568168/v1.5/Animaniacs-actors-dont-believe-Season-3-is-the-end.jpg?lg=5&=1"); //t key
 
-var DonutsImage = loadImage ("Donuts 2026-03-04 at 12.31.14 AM.png");
+var DonutsImage = loadImage ("Donuts 2026-03-04 at 12.31.14 AM.png"); //s key
 
 //Variable Declarations
 var sceneImage = lostSceneImage;
@@ -75,9 +75,11 @@ draw = function(){
         sceneImage = DonutsImage;
         sceneText = "The Donuts were here all along! Wakko can finally enjoy! Tks for helping the hungry lil guy! [Press r to restart]";
       }
+      
+      
+
 
    }
-  
 };
 
 var drawScene = function(){
@@ -86,9 +88,9 @@ var drawScene = function(){
     fill(0,0,0);
     rect(0, 450, 1100, 100); // text box
       
-    fill(255,255,255);
+    fill(255, 255, 255);
     textSize(19);
-   textFont( createFont("Luckiest Guy") );
+    textFont( createFont("Luckiest Guy") );
     text(sceneText, 10, 485);
 };
 
