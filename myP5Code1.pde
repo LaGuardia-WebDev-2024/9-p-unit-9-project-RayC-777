@@ -78,6 +78,14 @@ draw = function(){
       
 
    }
+
+if(mousePressed && sceneImage == DonutsImage){
+  textSize(30)
+  text("🍩", random(0,600), random(0,400));
+
+}
+
+
 };
 
 var drawScene = function(){
